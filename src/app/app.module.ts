@@ -12,7 +12,6 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
 import { MatIconModule } from '@angular/material/icon';
 import { MatToolbarModule } from '@angular/material/toolbar';
 
@@ -25,11 +24,12 @@ import { MovieGenreComponent } from './movie-genre/movie-genre.component';
 import { DirectorComponent } from './director/director.component';
 import { DescriptionComponent } from './description/description.component';
 import { NavbarComponent } from './navbar/navbar.component';
-
+import { EditUserComponent } from './edit-user/edit-user.component';
 
 const appRoutes: Routes = [
   { path: 'welcome', component: WelcomePageComponent },
   { path: 'movies', component: MovieCardComponent },
+  { path: 'profile', component: ProfileComponent },
   { path: '', redirectTo: 'welcome', pathMatch: 'prefix' },
 ];
 
@@ -44,7 +44,8 @@ const appRoutes: Routes = [
     MovieGenreComponent,
     DirectorComponent,
     DescriptionComponent,
-    NavbarComponent
+    NavbarComponent,
+    EditUserComponent
   ],
   imports: [
     RouterModule.forRoot(appRoutes),

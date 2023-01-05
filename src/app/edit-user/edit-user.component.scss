@@ -2,21 +2,9 @@ $bgColor: #af0624;
 $text: #fff;
 $boxColor: #000;
 $secondColor: #8d4c4c;
+$confirm: #025408;
 
-.profile-page {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 30px 40px;
-  background-color: $bgColor;
-  box-sizing: border-box;
-  border-style: solid;
-  border-color: $boxColor;
-  border-width: 5px;
-}
-
-.profile-card {
+.edit-user-card {
   max-width: 400px;
   margin: auto;
   padding: 25px;
@@ -26,13 +14,33 @@ $secondColor: #8d4c4c;
   border-width: 5px;
 }
 
-.profile-header {
+.edit-user-header {
   display: flex;
   justify-content: center;
+  text-align: center;
   color: $text;
 }
 
-.edit {
+.edit-field {
+  color: $text;
+}
+
+.edit-user-content {
+  text-align: center;
+}
+
+.update-button {
+  background-color: $confirm;
+  color: $text;
+}
+
+.edit-close {
   background-color: $boxColor;
   color: $text;
+}
+
+.edit-actions {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
 }
