@@ -11,8 +11,9 @@ export class NavbarComponent {
   constructor(public router: Router) { }
 
   /**
- * Logout the user. Navigate to welcome page and clear the localstorage.
- */
+   * logs out user, clears token and username from local storage
+   * @function logout
+   */
   logout(): void {
     this.router.navigate(['welcome']);
     localStorage.clear();

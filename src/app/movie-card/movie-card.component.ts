@@ -16,6 +16,12 @@ export class MovieCardComponent {
     this.getMovies();
   }
 
+  /**
+  * Fetch movies via API and set movies state to returned JSON file
+  * @returns array holding movies objects
+  * @function getMovies
+  */
+
   getMovies(): void {
     this.fetchApiData.getAllMovies().subscribe((resp: any) => {
       this.movies = resp;
